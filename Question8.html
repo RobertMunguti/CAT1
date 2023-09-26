@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <form action="submit.html">
+        <div>
+        <label for="name">Name</label>
+        <input type="text"required> <br>
+        <label for="age">Age</label>
+        <input type="number" required><br>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">Other</option><br>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="feedback">Feedback</label>
+        <textarea name="feedback" id="feedback" cols="30" rows="4"></textarea><br>
+    </div>
+    <div>
+        <label for="activities">Which of the following activities do you enjoy?</label><br>
+        <input type="checkbox" name="activities" id="hiking" value="hiking">
+        <label for="">Hiking</label><br>
+        <input type="checkbox" name="activities" id="reading" value="reading">
+        <label for="">Reading</label><br>
+        <input type="checkbox" name="activities" id="gaming" value="gaming">
+        <label for="">Gaming</label><br>
+    </div>
+    <div>
+        <label for="rate">Rate our service (1-5)</label><br>
+        <input type="range input" id="rate" name="rate" min="1" max="5" value="1"><br>
+    </div>
+    <div>
+        <label for="info">How did you hear about us?</label><br>
+        <label for="info">Internet</label>
+        <input type="radio" id="internet" name="info" value="internet"><br>
+        <label for="info">Friend</label>
+        <input type="radio" id="friend" name="info" value="friend"><br>
+        <label for="info">Advertisement</label>
+        <input type="radio" id="advertisement" name="info" value="advertisement"><br>
+    </div>
+    <input type="submit" value="submit">
+    </form>
+    <a href="#">Don't forget to check out our survey results.</a>
+
+</body>
+</html>
